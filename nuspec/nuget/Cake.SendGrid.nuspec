@@ -14,10 +14,10 @@
     <tags>Cake, Script, Build, SendGrid</tags>
   </metadata>
   <files>
-    <file src="Cake.SendGrid.dll" />
-    <file src="Cake.SendGrid.pdb" />
-    <file src="Cake.SendGrid.xml" />
-    <file src="StrongGrid.dll" />
-    <file src="Newtonsoft.Json.dll" />
+    <file src="Cake.SendGrid.dll" target="lib\net45" />
+    <file src="Cake.SendGrid.pdb" target="lib\net45" />
+    <file src="Cake.SendGrid.xml" target="lib\net45" />
+    <file src="StrongGrid.dll" target="lib\net45" />
+    <file src="Newtonsoft.Json.dll" target="lib\net45" />
   </files>
 </package>
