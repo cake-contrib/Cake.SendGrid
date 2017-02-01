@@ -1,7 +1,3 @@
-#Cake.SendGrid Documentation
-
-Cake.SendGrid is an Addin for [Cake](http://cakebuild.net/) which allows the sending of emails via [SendGrid](https://sendgrid.com).
-
 ```csharp
 #addin Cake.SendGrid
 

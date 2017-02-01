@@ -21,6 +21,10 @@ Cake.SendGrid is an Addin for [Cake](http://cakebuild.net/) which allows sending
 
 [![Coverage Status](https://coveralls.io/repos/github/cake-contrib/Cake.SendGrid/badge.svg)](https://coveralls.io/github/cake-contrib/Cake.SendGrid)
 
+## Quick Links
+
+- [Documentation](https://cake-contrib.github.io/Cake.SendGrid/)
+
 ## Chat Room
 Come join in the conversation about Cake.SendGrid in our Gitter Chat Room
 
