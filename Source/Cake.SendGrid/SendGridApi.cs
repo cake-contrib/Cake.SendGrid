@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Net;
 using Cake.Common.Diagnostics;
 using Cake.Core;
 using StrongGrid;
@@ -30,7 +29,7 @@ namespace Cake.SendGrid.Email
         {
             try
             {
-                using (var client = new Client(settings.ApiKey, proxy))
+                using (var client = new Client(settings.ApiKey))
                 {
                     context.Verbose("Sending email to {0} via the SendGrid API...", string.Join(", ", recipients.Select(r => r.Address).ToArray()));
 
