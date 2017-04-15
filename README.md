@@ -9,7 +9,7 @@ Cake.SendGrid is an Addin for [Cake](http://cakebuild.net/) which allows sending
 | |Stable|Pre-release|
 |:--:|:--:|:--:|
 |GitHub Release|-|[![GitHub release](https://img.shields.io/github/release/cake-contrib/Cake.SendGrid.svg)](https://github.com/cake-contrib/Cake.SendGrid/releases/latest)|
-|NuGet|[![NuGet](https://img.shields.io/nuget/v/Cake.SendGrid.svg)](https://www.nuget.org/packages/Cake.SendGrid)|[![NuGet](https://img.shields.io/nuget/vpre/Cake.SendGrid.svg)](https://www.nuget.org/packages/Cake.SendGrid)|
+|Package|[![NuGet](https://img.shields.io/nuget/v/Cake.SendGrid.svg)](https://www.nuget.org/packages/Cake.SendGrid)|[![MyGet](https://img.shields.io/myget/cake-contrib/vpre/Cake.SendGrid.svg)](http://myget.org/feed/cake-contrib/package/nuget/Cake.SendGrid)|
 
 ## Build Status
 
