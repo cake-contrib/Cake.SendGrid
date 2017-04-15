@@ -34,16 +34,16 @@ var searchModule = function() {
 
     a({
         id:0,
-        title:"SendGridAliases",
-        content:"SendGridAliases",
+        title:"SendGridProvider",
+        content:"SendGridProvider",
         description:'',
         tags:''
     });
 
     a({
         id:1,
-        title:"SendGridProvider",
-        content:"SendGridProvider",
+        title:"SendGridAliases",
+        content:"SendGridAliases",
         description:'',
         tags:''
     });
@@ -65,14 +65,14 @@ var searchModule = function() {
     });
 
     y({
-        url:'/Cake.SendGrid/Cake.SendGrid/api/Cake.SendGrid/SendGridAliases',
-        title:"SendGridAliases",
+        url:'/Cake.SendGrid/Cake.SendGrid/api/Cake.SendGrid/SendGridProvider',
+        title:"SendGridProvider",
         description:""
     });
 
     y({
-        url:'/Cake.SendGrid/Cake.SendGrid/api/Cake.SendGrid/SendGridProvider',
-        title:"SendGridProvider",
+        url:'/Cake.SendGrid/Cake.SendGrid/api/Cake.SendGrid/SendGridAliases',
+        title:"SendGridAliases",
         description:""
     });
 
