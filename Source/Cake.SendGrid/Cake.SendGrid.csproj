@@ -48,6 +48,10 @@
       <HintPath>..\packages\HttpMultipartParser.2.2.0\lib\net452\HttpMultipartParser.dll</HintPath>
       <Private>True</Private>
     </Reference>
+    <Reference Include="MimeTypesMap, Version=1.0.0.0, Culture=neutral, PublicKeyToken=1b320cc08ad5aa89, processorArchitecture=MSIL">
+      <HintPath>..\packages\MimeTypesMap.1.0.0\lib\net451\MimeTypesMap.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="Newtonsoft.Json, Version=9.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
       <HintPath>..\packages\Newtonsoft.Json.9.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
       <Private>True</Private>
