@@ -19,5 +19,6 @@
     <file src="Cake.SendGrid.xml" target="lib\net45" />
     <file src="StrongGrid.dll" target="lib\net45" />
     <file src="Newtonsoft.Json.dll" target="lib\net45" />
+    <file src="MimeTypesMap.dll" target="lib\net45" />
   </files>
 </package>
