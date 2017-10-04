@@ -31,6 +31,7 @@
   <ItemGroup>
     <PackageReference Include="Cake.Core" Version="0.22.2" PrivateAssets="All" />
     <PackageReference Include="Cake.Common" Version="0.22.2" PrivateAssets="All" />
+    <PackageReference Include="Cake.Email.Common" Version="0.1.0" />
     <PackageReference Include="StrongGrid" Version="0.31.0" />
     <PackageReference Include="StyleCop.Analyzers" Version="1.1.0-beta004" PrivateAssets="All" />
   </ItemGroup>
