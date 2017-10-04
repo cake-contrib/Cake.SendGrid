@@ -43,12 +43,14 @@ namespace Cake.SendGrid
         /// <returns>An instance of <see cref="SendGridResult"/> indicating success/failure</returns>
         /// <example>
         /// <code>
+        /// using Cake.Email.Common;
+        ///
         /// var apiKey = "... your api key ...";
         /// var attachments = new[]
         /// {
-        ///     SendGrid.CreateAttachmentFromLocalFile("C:\\temp\\MyFile.txt"),
-        ///     SendGrid.CreateAttachmentFromLocalFile("C:\\temp\\MySpreadsheet.xls"),
-        ///     SendGrid.CreateAttachmentFromLocalFile("C:\\temp\\MyFile.pdf"),
+        ///     Attachment.FromLocalFile("C:\\temp\\MyFile.txt"),
+        ///     Attachment.FromLocalFile("C:\\temp\\MySpreadsheet.xls"),
+        ///     Attachment.FromLocalFile("C:\\temp\\MyFile.pdf"),
         /// };
         /// try
         /// {
@@ -99,19 +101,21 @@ namespace Cake.SendGrid
         /// <returns>An instance of <see cref="SendGridResult"/> indicating success/failure</returns>
         /// <example>
         /// <code>
+        /// using Cake.Email.Common;
+        ///
         /// var apiKey = "... your api key ...";
         /// var attachments = new[]
         /// {
-        ///     SendGrid.CreateAttachmentFromLocalFile("C:\\temp\\MyFile.txt"),
-        ///     SendGrid.CreateAttachmentFromLocalFile("C:\\temp\\MySpreadsheet.xls"),
-        ///     SendGrid.CreateAttachmentFromLocalFile("C:\\temp\\MyFile.pdf"),
+        ///     Attachment.FromLocalFile("C:\\temp\\MyFile.txt"),
+        ///     Attachment.FromLocalFile("C:\\temp\\MySpreadsheet.xls"),
+        ///     Attachment.FromLocalFile("C:\\temp\\MyFile.pdf"),
         /// };
         /// try
         /// {
         ///     var result = SendGrid.SendEmail(
         ///         senderName: "Bob Smith",
         ///         senderAddress: "bob@example.com",
-        ///         recipient: new MailAddress("jane@example.com", "Jane Doe"),
+        ///         recipient: new Cake.Email.Common.MailAddress("jane@example.com", "Jane Doe"),
         ///         subject: "This is a test",
         ///         htmlContent: "<html><body>This is a test</body></html>",
         ///         textContent: "This is a test",
@@ -154,12 +158,14 @@ namespace Cake.SendGrid
         /// <returns>An instance of <see cref="SendGridResult"/> indicating success/failure</returns>
         /// <example>
         /// <code>
+        /// using Cake.Email.Common;
+        ///
         /// var apiKey = "... your api key ...";
         /// var attachments = new[]
         /// {
-        ///     SendGrid.CreateAttachmentFromLocalFile("C:\\temp\\MyFile.txt"),
-        ///     SendGrid.CreateAttachmentFromLocalFile("C:\\temp\\MySpreadsheet.xls"),
-        ///     SendGrid.CreateAttachmentFromLocalFile("C:\\temp\\MyFile.pdf"),
+        ///     Attachment.FromLocalFile("C:\\temp\\MyFile.txt"),
+        ///     Attachment.FromLocalFile("C:\\temp\\MySpreadsheet.xls"),
+        ///     Attachment.FromLocalFile("C:\\temp\\MyFile.pdf"),
         /// };
         /// try
         /// {
@@ -167,8 +173,8 @@ namespace Cake.SendGrid
         ///         senderName: "Bob Smith",
         ///         senderAddress: "bob@example.com",
         ///         recipients: new[] {
-        ///             new MailAddress("jane@example.com", "Jane Doe"),
-        ///             new MailAddress("jane@example.com", "Jane Doe")
+        ///             new Cake.Email.Common.MailAddress("jane@example.com", "Jane Doe"),
+        ///             new Cake.Email.Common.MailAddress("jane@example.com", "Jane Doe")
         ///            },
         ///         subject: "This is a test",
         ///         htmlContent: "<html><body>This is a test</body></html>",
