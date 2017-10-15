@@ -16,11 +16,11 @@ Second, we highly recommend that you add the following 'using' statement in your
 using Cake.Email.Common;
 ```
 
-Also, this addin is designed to take advantage of some of the new features released in CakeBuild version `0.23.0`. Having said that, a [bug](https://github.com/cake-build/cake/issues/1838) was discovered in `0.22.0` and fixed in `0.23.0` therefore you need to ensure to ensure that version (or more recent).
-As of this writing, 0.23.0 is not yey released so, in the mean time, you can use `0.23.0-alpha0059`. Your `tools\package.config` should be:
+Also, this addin is designed to take advantage of some of the new features released in CakeBuild version `0.22.0`. Having said that, a [bug](https://github.com/cake-build/cake/issues/1838) was discovered in `0.22.0` and fixed in `0.23.0` therefore you need to ensure to ensure that version (or more recent).
+Your `tools\package.config` should be:
 ```xml
 <packages>
-    <package id="Cake" version="0.23.0-alpha0059" />
+    <package id="Cake" version="0.23.0" />
 </packages>
 ```
 
