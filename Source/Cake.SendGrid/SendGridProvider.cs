@@ -175,7 +175,7 @@ namespace Cake.SendGrid
         ///         recipients: new[] {
         ///             new Cake.Email.Common.MailAddress("jane@example.com", "Jane Doe"),
         ///             new Cake.Email.Common.MailAddress("jane@example.com", "Jane Doe")
-        ///            },
+        ///         },
         ///         subject: "This is a test",
         ///         htmlContent: "<html><body>This is a test</body></html>",
         ///         textContent: "This is a test",
