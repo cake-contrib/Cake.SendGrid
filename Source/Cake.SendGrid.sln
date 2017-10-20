@@ -1,11 +1,9 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-VisualStudioVersion = 15.0.26730.16
+VisualStudioVersion = 15.0.27004.2002
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Cake.SendGrid", "Cake.SendGrid\Cake.SendGrid.csproj", "{96BD687F-BDD9-4D40-822A-BF5FA75793BF}"
-EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Cake.SendGrid.Tests", "Cake.SendGrid.Tests\Cake.SendGrid.Tests.csproj", "{D530DEFC-7ED6-4E82-ABA2-607977DBAB82}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -17,10 +15,6 @@ Global
 		{96BD687F-BDD9-4D40-822A-BF5FA75793BF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{96BD687F-BDD9-4D40-822A-BF5FA75793BF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{96BD687F-BDD9-4D40-822A-BF5FA75793BF}.Release|Any CPU.Build.0 = Release|Any CPU
-		{D530DEFC-7ED6-4E82-ABA2-607977DBAB82}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{D530DEFC-7ED6-4E82-ABA2-607977DBAB82}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{D530DEFC-7ED6-4E82-ABA2-607977DBAB82}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{D530DEFC-7ED6-4E82-ABA2-607977DBAB82}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
