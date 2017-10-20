@@ -65,25 +65,25 @@ var searchModule = function() {
     });
 
     y({
-        url:'/Cake.SendGrid/Cake.SendGrid/api/Cake.SendGrid/SendGridProvider',
+        url:'/Cake.SendGrid/api/Cake.SendGrid/SendGridProvider',
         title:"SendGridProvider",
         description:""
     });
 
     y({
-        url:'/Cake.SendGrid/Cake.SendGrid/api/Cake.SendGrid/SendGridResult',
+        url:'/Cake.SendGrid/api/Cake.SendGrid/SendGridResult',
         title:"SendGridResult",
         description:""
     });
 
     y({
-        url:'/Cake.SendGrid/Cake.SendGrid/api/Cake.SendGrid.Email/SendGridSettings',
+        url:'/Cake.SendGrid/api/Cake.SendGrid.Email/SendGridSettings',
         title:"SendGridSettings",
         description:""
     });
 
     y({
-        url:'/Cake.SendGrid/Cake.SendGrid/api/Cake.SendGrid/SendGridAliases',
+        url:'/Cake.SendGrid/api/Cake.SendGrid/SendGridAliases',
         title:"SendGridAliases",
         description:""
     });

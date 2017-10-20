@@ -1,4 +1,4 @@
-<!DOCTYPE html><html><head>
+﻿<!DOCTYPE html><html><head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=Edge">
         <meta name="description">
@@ -6,7 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="shortcut icon" href="/Cake.SendGrid/assets/img/favicon.ico" type="image/x-icon">
         <link rel="icon" href="/Cake.SendGrid/assets/img/favicon.ico" type="image/x-icon">
-        <title>Docs - API - SendGridResult Class</title>
+        <title>Cake.SendGrid - API - SendGridResult Class</title>
         <link href="/Cake.SendGrid/assets/css/mermaid.css" rel="stylesheet">
         <link href="/Cake.SendGrid/assets/css/highlight.css" rel="stylesheet">
         <link href="/Cake.SendGrid/assets/css/bootstrap/bootstrap.css" rel="stylesheet">
@@ -36,7 +36,7 @@
             <header class="main-header">   
                      
                 <a href="/Cake.SendGrid/" class="logo">
-                            <span>Docs</span>
+                            <span>Cake.SendGrid</span>
                 </a>   
                          
                 <nav class="navbar navbar-static-top" role="navigation">
@@ -84,8 +84,8 @@
                 </section>
                 <section class="sidebar">                    
                     	
-	    <script src="/assets/js/lunr.min.js"></script>
-    <script src="/assets/js/searchIndex.js"></script>
+	    <script src="/Cake.SendGrid/assets/js/lunr.min.js"></script>
+    <script src="/Cake.SendGrid/assets/js/searchIndex.js"></script>
     <div class="sidebar-form">
         <div class="input-group">
             <input type="text" name="search" id="search" class="form-control" placeholder="Search Types...">
@@ -110,7 +110,7 @@
             } else {					
                 for(var i = 0; i < results.length; ++i){
                     var res = results[i];
-                    listHtml += "<li><a href='" + res.url + "'>" + res.title + "</a></li>";
+                    listHtml += "<li><a href='" + res.url + "'>" + htmlEscape(res.title) + "</a></li>";
                 }				
             }
             listHtml += "</ul>";				
@@ -122,6 +122,13 @@
                 runSearch($("#search").val());
             });
         });
+
+        function htmlEscape(html) {
+            return document.createElement('div')
+                .appendChild(document.createTextNode(html))
+                .parentNode
+                .innerHTML;
+        }
     </script>
 	
     <hr>
@@ -228,7 +235,7 @@ public sealed class SendGridResult</code></pre>
 							</tr>
 						</thead>
 							<tbody><tr>
-								<td><a href="/Cake.SendGrid/api/Cake.SendGrid/SendGridResult/F9556AC8">SendGridResult<wbr>(bool, <wbr>string, <wbr>string)<wbr></a></td>
+								<td><a href="/Cake.SendGrid/api/Cake.SendGrid/SendGridResult/94AE1388">SendGridResult<wbr>(bool, <wbr>string, <wbr>string, <wbr>string)<wbr></a></td>
 									<td>
     Initializes a new instance of the <code class="cs"><a href="/Cake.SendGrid/api/Cake.SendGrid/SendGridResult">SendGridResult</a></code> class.
     </td>
@@ -257,6 +264,15 @@ public sealed class SendGridResult</code></pre>
 								<td>
 									<div>
     Gets the Error message on failure
+    </div>
+								</td>
+							</tr>
+							<tr>
+								<td><a href="/Cake.SendGrid/api/Cake.SendGrid/SendGridResult/3CE67755">MessageId</a></td>
+								<td>string</td>
+								<td>
+									<div>
+    Gets a value indicating whether success or failure, <code class="cs"><a href="/Cake.SendGrid/api/Cake.SendGrid/SendGridResult/CB3257B1">Error</a></code> for info on failure
     </div>
 								</td>
 							</tr>
@@ -307,6 +323,7 @@ public sealed class SendGridResult</code></pre>
 				</div>
 			</div>
 		
+
 
 
 	

@@ -1,4 +1,4 @@
-<!DOCTYPE html><html><head>
+﻿<!DOCTYPE html><html><head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=Edge">
         <meta name="description">
@@ -6,7 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="shortcut icon" href="/Cake.SendGrid/assets/img/favicon.ico" type="image/x-icon">
         <link rel="icon" href="/Cake.SendGrid/assets/img/favicon.ico" type="image/x-icon">
-        <title>Docs - API - SendGridProvider.SendGridProvider(ICakeContext) Constructor</title>
+        <title>Cake.SendGrid - API - SendGridProvider.SendGridProvider(ICakeContext) Constructor</title>
         <link href="/Cake.SendGrid/assets/css/mermaid.css" rel="stylesheet">
         <link href="/Cake.SendGrid/assets/css/highlight.css" rel="stylesheet">
         <link href="/Cake.SendGrid/assets/css/bootstrap/bootstrap.css" rel="stylesheet">
@@ -36,7 +36,7 @@
             <header class="main-header">   
                      
                 <a href="/Cake.SendGrid/" class="logo">
-                            <span>Docs</span>
+                            <span>Cake.SendGrid</span>
                 </a>   
                          
                 <nav class="navbar navbar-static-top" role="navigation">
@@ -82,8 +82,8 @@
                 </section>
                 <section class="sidebar">                    
                     	
-	    <script src="/assets/js/lunr.min.js"></script>
-    <script src="/assets/js/searchIndex.js"></script>
+	    <script src="/Cake.SendGrid/assets/js/lunr.min.js"></script>
+    <script src="/Cake.SendGrid/assets/js/searchIndex.js"></script>
     <div class="sidebar-form">
         <div class="input-group">
             <input type="text" name="search" id="search" class="form-control" placeholder="Search Types...">
@@ -108,7 +108,7 @@
             } else {					
                 for(var i = 0; i < results.length; ++i){
                     var res = results[i];
-                    listHtml += "<li><a href='" + res.url + "'>" + res.title + "</a></li>";
+                    listHtml += "<li><a href='" + res.url + "'>" + htmlEscape(res.title) + "</a></li>";
                 }				
             }
             listHtml += "</ul>";				
@@ -120,6 +120,13 @@
                 runSearch($("#search").val());
             });
         });
+
+        function htmlEscape(html) {
+            return document.createElement('div')
+                .appendChild(document.createTextNode(html))
+                .parentNode
+                .innerHTML;
+        }
     </script>
 	
     <hr>
@@ -134,9 +141,9 @@
 			<li class="header">Constructors</li>
 				<li class="selected"><a href="/Cake.SendGrid/api/Cake.SendGrid/SendGridProvider/4708019D">SendGridProvider<wbr>(ICakeContext)<wbr></a></li>
 			<li class="header">Method Members</li>
-				<li><a href="/Cake.SendGrid/api/Cake.SendGrid/SendGridProvider/012E0D73">SendEmail<wbr>(string, <wbr>string, <wbr>string, <wbr>string, <wbr>string, <wbr>string, <wbr>string, <wbr>SendGridSettings)<wbr></a></li>
-				<li><a href="/Cake.SendGrid/api/Cake.SendGrid/SendGridProvider/15D092B2">SendEmail<wbr>(string, <wbr>string, <wbr>Net<wbr>.Mail<wbr>.MailAddress, <wbr>string, <wbr>string, <wbr>string, <wbr>SendGridSettings)<wbr></a></li>
-				<li><a href="/Cake.SendGrid/api/Cake.SendGrid/SendGridProvider/53DA277C">SendEmail<wbr>(string, <wbr>string, <wbr>IEnumerable<wbr>&lt;Net<wbr>.Mail<wbr>.MailAddress&gt;<wbr>, <wbr>string, <wbr>string, <wbr>string, <wbr>SendGridSettings)<wbr></a></li>
+				<li><a href="/Cake.SendGrid/api/Cake.SendGrid/SendGridProvider/599E5229">SendEmail<wbr>(string, <wbr>string, <wbr>string, <wbr>string, <wbr>string, <wbr>string, <wbr>string, <wbr>IEnumerable<wbr>&lt;Email<wbr>.Common<wbr>.Attachment&gt;<wbr>, <wbr>SendGridSettings)<wbr></a></li>
+				<li><a href="/Cake.SendGrid/api/Cake.SendGrid/SendGridProvider/8CC3D8FE">SendEmail<wbr>(string, <wbr>string, <wbr>Email<wbr>.Common<wbr>.MailAddress, <wbr>string, <wbr>string, <wbr>string, <wbr>IEnumerable<wbr>&lt;Email<wbr>.Common<wbr>.Attachment&gt;<wbr>, <wbr>SendGridSettings)<wbr></a></li>
+				<li><a href="/Cake.SendGrid/api/Cake.SendGrid/SendGridProvider/ACD5C4AB">SendEmail<wbr>(string, <wbr>string, <wbr>IEnumerable<wbr>&lt;Email<wbr>.Common<wbr>.MailAddress&gt;<wbr>, <wbr>string, <wbr>string, <wbr>string, <wbr>IEnumerable<wbr>&lt;Email<wbr>.Common<wbr>.Attachment&gt;<wbr>, <wbr>SendGridSettings)<wbr></a></li>
 
 
                     </ul>

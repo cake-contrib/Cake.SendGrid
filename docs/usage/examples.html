@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html>
     <head>
         <meta charset="utf-8">
@@ -8,7 +8,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="shortcut icon" href="/Cake.SendGrid/assets/img/favicon.ico" type="image/x-icon">
         <link rel="icon" href="/Cake.SendGrid/assets/img/favicon.ico" type="image/x-icon">
-        <title>Docs - Examples</title>
+        <title>Cake.SendGrid - Examples</title>
         <link href="/Cake.SendGrid/assets/css/mermaid.css" rel="stylesheet">
         <link href="/Cake.SendGrid/assets/css/highlight.css" rel="stylesheet">
         <link href="/Cake.SendGrid/assets/css/bootstrap/bootstrap.css" rel="stylesheet" />
@@ -38,7 +38,7 @@
             <header class="main-header">   
                      
                 <a href="/Cake.SendGrid/" class="logo">
-                            <span>Docs</span>
+                            <span>Cake.SendGrid</span>
                 </a>   
                          
                 <nav class="navbar navbar-static-top" role="navigation">
@@ -156,8 +156,8 @@ Task(&quot;SendEmail&quot;)
                 senderAddress: &quot;bob&#64;example.com&quot;,
                 recipients: new[]
                 {
-                    new System.Net.Mail.MailAddress(&quot;jane&#64;example.com&quot;, &quot;Jane Doe&quot;),
-                    new System.Net.Mail.MailAddress(&quot;bob&#64;example.com&quot;, &quot;Bob Smith&quot;)
+                    new Cake.Email.Common.MailAddress(&quot;jane&#64;example.com&quot;, &quot;Jane Doe&quot;),
+                    new Cake.Email.Common.MailAddress(&quot;john&#64;example.com&quot;, &quot;John Smith&quot;)
                 },
                 subject: &quot;This is a test&quot;,
                 htmlContent: &quot;&lt;html&gt;&lt;body&gt;This is a test&lt;/body&gt;&lt;/html&gt;&quot;,

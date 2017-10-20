@@ -1,4 +1,4 @@
-<!DOCTYPE html><html><head>
+﻿<!DOCTYPE html><html><head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=Edge">
         <meta name="description">
@@ -6,7 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="shortcut icon" href="/Cake.SendGrid/assets/img/favicon.ico" type="image/x-icon">
         <link rel="icon" href="/Cake.SendGrid/assets/img/favicon.ico" type="image/x-icon">
-        <title>Docs - API - SendGridProvider.SendEmail(string, string, IEnumerable&lt;Net.Mail.MailAddress&gt;, string, string, string, SendGridSettings) Method</title>
+        <title>Cake.SendGrid - API - SendGridResult.SendGridResult(bool, string, string, string) Constructor</title>
         <link href="/Cake.SendGrid/assets/css/mermaid.css" rel="stylesheet">
         <link href="/Cake.SendGrid/assets/css/highlight.css" rel="stylesheet">
         <link href="/Cake.SendGrid/assets/css/bootstrap/bootstrap.css" rel="stylesheet">
@@ -36,7 +36,7 @@
             <header class="main-header">   
                      
                 <a href="/Cake.SendGrid/" class="logo">
-                            <span>Docs</span>
+                            <span>Cake.SendGrid</span>
                 </a>   
                          
                 <nav class="navbar navbar-static-top" role="navigation">
@@ -74,8 +74,6 @@
                     	
 	<div id="infobar-headings"><h6>On This Page</h6><p><a href="#Summary">Summary</a></p>
 <p><a href="#Syntax">Syntax</a></p>
-<p><a href="#Examples">Examples</a></p>
-<p><a href="#Attributes">Attributes</a></p>
 <p><a href="#Parameters">Parameters</a></p>
 <p><a href="#ReturnValue">Return Value</a></p>
 <hr class="infobar-hidden">
@@ -84,8 +82,8 @@
                 </section>
                 <section class="sidebar">                    
                     	
-	    <script src="/assets/js/lunr.min.js"></script>
-    <script src="/assets/js/searchIndex.js"></script>
+	    <script src="/Cake.SendGrid/assets/js/lunr.min.js"></script>
+    <script src="/Cake.SendGrid/assets/js/searchIndex.js"></script>
     <div class="sidebar-form">
         <div class="input-group">
             <input type="text" name="search" id="search" class="form-control" placeholder="Search Types...">
@@ -110,7 +108,7 @@
             } else {					
                 for(var i = 0; i < results.length; ++i){
                     var res = results[i];
-                    listHtml += "<li><a href='" + res.url + "'>" + res.title + "</a></li>";
+                    listHtml += "<li><a href='" + res.url + "'>" + htmlEscape(res.title) + "</a></li>";
                 }				
             }
             listHtml += "</ul>";				
@@ -122,6 +120,13 @@
                 runSearch($("#search").val());
             });
         });
+
+        function htmlEscape(html) {
+            return document.createElement('div')
+                .appendChild(document.createTextNode(html))
+                .parentNode
+                .innerHTML;
+        }
     </script>
 	
     <hr>
@@ -131,14 +136,17 @@
 			<li class="header">Namespace</li>
 		<li><a href="/Cake.SendGrid/api/Cake.SendGrid">Cake<wbr>.SendGrid</a></li>
 		<li class="header">Type</li>
-		<li><a href="/Cake.SendGrid/api/Cake.SendGrid/SendGridProvider">SendGridProvider</a></li>
+		<li><a href="/Cake.SendGrid/api/Cake.SendGrid/SendGridResult">SendGridResult</a></li>
 		<li role="separator" class="divider"></li>
 			<li class="header">Constructors</li>
-				<li><a href="/Cake.SendGrid/api/Cake.SendGrid/SendGridProvider/4708019D">SendGridProvider<wbr>(ICakeContext)<wbr></a></li>
+				<li class="selected"><a href="/Cake.SendGrid/api/Cake.SendGrid/SendGridResult/94AE1388">SendGridResult<wbr>(bool, <wbr>string, <wbr>string, <wbr>string)<wbr></a></li>
+			<li class="header">Property Members</li>
+				<li><a href="/Cake.SendGrid/api/Cake.SendGrid/SendGridResult/CB3257B1">Error</a></li>
+				<li><a href="/Cake.SendGrid/api/Cake.SendGrid/SendGridResult/3CE67755">MessageId</a></li>
+				<li><a href="/Cake.SendGrid/api/Cake.SendGrid/SendGridResult/94B5AB9A">Ok</a></li>
+				<li><a href="/Cake.SendGrid/api/Cake.SendGrid/SendGridResult/DC8FA395">TimeStamp</a></li>
 			<li class="header">Method Members</li>
-				<li><a href="/Cake.SendGrid/api/Cake.SendGrid/SendGridProvider/012E0D73">SendEmail<wbr>(string, <wbr>string, <wbr>string, <wbr>string, <wbr>string, <wbr>string, <wbr>string, <wbr>SendGridSettings)<wbr></a></li>
-				<li><a href="/Cake.SendGrid/api/Cake.SendGrid/SendGridProvider/15D092B2">SendEmail<wbr>(string, <wbr>string, <wbr>Net<wbr>.Mail<wbr>.MailAddress, <wbr>string, <wbr>string, <wbr>string, <wbr>SendGridSettings)<wbr></a></li>
-				<li class="selected"><a href="/Cake.SendGrid/api/Cake.SendGrid/SendGridProvider/53DA277C">SendEmail<wbr>(string, <wbr>string, <wbr>IEnumerable<wbr>&lt;Net<wbr>.Mail<wbr>.MailAddress&gt;<wbr>, <wbr>string, <wbr>string, <wbr>string, <wbr>SendGridSettings)<wbr></a></li>
+				<li><a href="/Cake.SendGrid/api/Cake.SendGrid/SendGridResult/331503FD">ToString<wbr>()<wbr></a></li>
 
 
                     </ul>
@@ -152,15 +160,15 @@
 
 
 <section class="content-header">
-			<h3><a href="/Cake.SendGrid/api/Cake.SendGrid/SendGridProvider">SendGridProvider</a>.</h3>
-	<h1>SendEmail<wbr>(string, <wbr>string, <wbr>IEnumerable<wbr>&lt;Net<wbr>.Mail<wbr>.MailAddress&gt;<wbr>, <wbr>string, <wbr>string, <wbr>string, <wbr>SendGridSettings)<wbr> <small>Method</small></h1>
+			<h3><a href="/Cake.SendGrid/api/Cake.SendGrid/SendGridResult">SendGridResult</a>.</h3>
+	<h1>SendGridResult<wbr>(bool, <wbr>string, <wbr>string, <wbr>string)<wbr> <small>Constructor</small></h1>
 </section>
 <section class="content">
 	
 	
 		<h1 id="Summary">Summary</h1>
 	<div class="lead">
-    Send an email through SendGrid
+    Initializes a new instance of the <code class="cs"><a href="/Cake.SendGrid/api/Cake.SendGrid/SendGridResult">SendGridResult</a></code> class.
     </div>
 
 		<div class="panel panel-default">
@@ -171,71 +179,17 @@
 						<dd><a href="/Cake.SendGrid/api/Cake.SendGrid">Cake<wbr>.SendGrid</a></dd>
 					
 						<dt>Containing Type</dt>
-						<dd><a href="/Cake.SendGrid/api/Cake.SendGrid/SendGridProvider">SendGridProvider</a></dd>		
+						<dd><a href="/Cake.SendGrid/api/Cake.SendGrid/SendGridResult">SendGridResult</a></dd>		
 					
 				</dl>
   			</div>
 		</div>
 
 	<h1 id="Syntax">Syntax</h1>
-	<pre><code>[CakeAliasCategory("Email")]
-public SendGridResult SendEmail(string senderName, string senderAddress, IEnumerable&lt;Net.Mail.MailAddress&gt; recipients, string subject, string htmlContent, string textContent, SendGridSettings settings)</code></pre>
-
-	<h1 id="Examples">Examples</h1>
-	<div>
-    <pre><code class="cs">var apiKey = "... your api key ...";
-try
-{
-    var result = SendGrid.SendEmail(
-        senderName: "Bob Smith",
-        senderAddress: "bob@example.com",
-        recipients: new[] {
-            new MailAddress("jane@example.com", "Jane Doe"),
-            new MailAddress("jane@example.com", "Jane Doe")
-           },
-        subject: "This is a test",
-        htmlContent: "This is a test",
-        textContent: "This is a test",
-        settings: new CakeMailEmailSettings
-        {
-        ApiKey = apiKey,
-        UserName = userName,
-        Password = password
-        }
-    );
-    if (result.Ok)
-    {
-        Information("Email succcessfully sent");
-    }
-    else
-    {
-        Error("Failed to send email: {0}", result.Error);
-    }
-}
-catch(Exception ex)
-{
-    Error("{0}", ex);
-}</code></pre>
-    </div>
+	<pre><code>public SendGridResult(bool ok, string messageId, string timeStamp, string error)</code></pre>
 
 
-	<h1 id="Attributes">Attributes</h1>
-	<div class="box">
-		<div class="box-body no-padding table-responsive">
-			<table class="table table-striped table-hover two-cols">
-				<thead>
-					<tr>
-						<th>Type</th>
-						<th>Description</th>
-					</tr>
-				</thead>
-					<tbody><tr>
-						<td>CakeAliasCategory</td>
-						<td></td>
-					</tr>
-			</tbody></table>
-		</div>
-	</div>	
+
 
 
 	<h1 id="Parameters">Parameters</h1>
@@ -250,39 +204,24 @@ catch(Exception ex)
 					</tr>
 				</thead>
 					<tbody><tr>
-						<td>senderName</td>
+						<td>ok</td>
+						<td>bool</td>
+						<td>Indicating success or failure</td>
+					</tr>
+					<tr>
+						<td>messageId</td>
 						<td>string</td>
-						<td>The name of the person sending the email</td>
+						<td>The unique ID of the sent email</td>
 					</tr>
 					<tr>
-						<td>senderAddress</td>
+						<td>timeStamp</td>
 						<td>string</td>
-						<td>The email addresses of the person sending the email</td>
+						<td>Timestamp of the message</td>
 					</tr>
 					<tr>
-						<td>recipients</td>
-						<td>IEnumerable<wbr>&lt;Net<wbr>.Mail<wbr>.MailAddress&gt;<wbr></td>
-						<td>An enumeration of recipients who will receive the email</td>
-					</tr>
-					<tr>
-						<td>subject</td>
+						<td>error</td>
 						<td>string</td>
-						<td>The subject line of the email</td>
-					</tr>
-					<tr>
-						<td>htmlContent</td>
-						<td>string</td>
-						<td>The HTML content</td>
-					</tr>
-					<tr>
-						<td>textContent</td>
-						<td>string</td>
-						<td>The text content</td>
-					</tr>
-					<tr>
-						<td>settings</td>
-						<td><a href="/Cake.SendGrid/api/Cake.SendGrid.Email/SendGridSettings">SendGridSettings</a></td>
-						<td>The settings to be used when sending the email</td>
+						<td>Error message on failure</td>
 					</tr>
 			</tbody></table>
 		</div>
@@ -299,8 +238,8 @@ catch(Exception ex)
 					</tr>
 				</thead>
 				<tbody><tr>
-					<td><a href="/Cake.SendGrid/api/Cake.SendGrid/SendGridResult">SendGridResult</a></td>
-					<td>An instance of <code class="cs"><a href="/Cake.SendGrid/api/Cake.SendGrid/SendGridResult">SendGridResult</a></code> indicating success/failure</td>
+					<td>void</td>
+					<td></td>
 				</tr>
 			</tbody></table>
 		</div>
