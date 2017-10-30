@@ -18,7 +18,7 @@ ToolSettings.SetToolSettings(context: Context,
                                 BuildParameters.RootDirectoryPath + "/Source/Cake.SendGrid.Tests/**/*.cs",
                                 BuildParameters.RootDirectoryPath + "/Source/Cake.SendGrid/**/*.AssemblyInfo.cs"
                             },
-                            testCoverageFilter: "+[*]* -[xunit.*]* -[Cake.Core]* -[Cake.Testing]* -[*.Tests]* -[Cake.Email.Common]*",
+                            testCoverageFilter: "+[Cake.SendGrid]*",
                             testCoverageExcludeByAttribute: "*.ExcludeFromCodeCoverage*",
                             testCoverageExcludeByFile: "*/*Designer.cs;*/*.g.cs;*/*.g.i.cs");
 
