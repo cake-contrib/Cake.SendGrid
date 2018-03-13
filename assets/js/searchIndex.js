@@ -34,14 +34,6 @@ var searchModule = function() {
 
     a({
         id:0,
-        title:"SendGridResult",
-        content:"SendGridResult",
-        description:'',
-        tags:''
-    });
-
-    a({
-        id:1,
         title:"SendGridProvider",
         content:"SendGridProvider",
         description:'',
@@ -49,25 +41,27 @@ var searchModule = function() {
     });
 
     a({
-        id:2,
-        title:"SendGridAliases",
-        content:"SendGridAliases",
+        id:1,
+        title:"SendGridResult",
+        content:"SendGridResult",
         description:'',
         tags:''
     });
 
     a({
-        id:3,
+        id:2,
         title:"SendGridSettings",
         content:"SendGridSettings",
         description:'',
         tags:''
     });
 
-    y({
-        url:'/Cake.SendGrid/api/Cake.SendGrid/SendGridResult',
-        title:"SendGridResult",
-        description:""
+    a({
+        id:3,
+        title:"SendGridAliases",
+        content:"SendGridAliases",
+        description:'',
+        tags:''
     });
 
     y({
@@ -77,14 +71,20 @@ var searchModule = function() {
     });
 
     y({
-        url:'/Cake.SendGrid/api/Cake.SendGrid/SendGridAliases',
-        title:"SendGridAliases",
+        url:'/Cake.SendGrid/api/Cake.SendGrid/SendGridResult',
+        title:"SendGridResult",
         description:""
     });
 
     y({
         url:'/Cake.SendGrid/api/Cake.SendGrid.Email/SendGridSettings',
         title:"SendGridSettings",
+        description:""
+    });
+
+    y({
+        url:'/Cake.SendGrid/api/Cake.SendGrid/SendGridAliases',
+        title:"SendGridAliases",
         description:""
     });
 
