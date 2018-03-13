@@ -23,10 +23,6 @@
     <Company>Cake Contributions</Company>
   </PropertyGroup>
 
-  <PropertyGroup>
-    <CodeAnalysisRuleSet>$(SolutionDir)Cake.SendGrid\Cake.SendGrid.ruleset</CodeAnalysisRuleSet>
-  </PropertyGroup>
-
   <ItemGroup>
     <PackageReference Include="Cake.Core" Version="0.22.2" PrivateAssets="All" />
     <PackageReference Include="Cake.Common" Version="0.22.2" PrivateAssets="All" />
@@ -34,5 +30,13 @@
     <PackageReference Include="StrongGrid" Version="0.31.0" />
     <PackageReference Include="StyleCop.Analyzers" Version="1.1.0-beta004" PrivateAssets="All" />
   </ItemGroup>
+
+  <ItemGroup>
+    <AdditionalFiles Include="$(SolutionDir)stylecop.json" Link="stylecop.json" />
+  </ItemGroup>
+
+  <PropertyGroup>
+    <CodeAnalysisRuleSet>$(SolutionDir)Cake.SendGrid.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
 
 </Project>
