@@ -13,17 +13,17 @@ Author: jericho
 ## Note
 
 First, include a reference to this addin in your script like this:
-```
+```csharp
 #addin nuget:?package=Cake.SendGrid&version=0.6.0
 ```
 
 Second, we highly recommend that you add the following 'using' statement in your script. Technically, this is not necessary, but it simplifies dealing with attachements: 
-```
+```csharp
 using Cake.Email.Common;
 ```
 
 Also, this addin is designed to take advantage of some of the new features released in CakeBuild version `0.26.0` therefore your `tools\package.config` should look like this:
-```
+```xml
 <packages>
     <package id="Cake" version="0.26.0" />
 </packages>
