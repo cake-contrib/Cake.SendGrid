@@ -9,17 +9,12 @@ BuildParameters.SetParameters(context: Context,
                             repositoryOwner: "cake-contrib",
                             repositoryName: "Cake.SendGrid",
                             shouldRunDotNetCorePack: true,
+                            shouldRunDupFinder: true,
+                            shouldRunInspectCode: false,
                             appVeyorAccountName: "cakecontrib");
 
 BuildParameters.PrintParameters(Context);
 
-ToolSettings.SetToolSettings(context: Context,
-                            dupFinderExcludePattern: new string[] {
-                                BuildParameters.RootDirectoryPath + "/Source/Cake.SendGrid.Tests/**/*.cs",
-                                BuildParameters.RootDirectoryPath + "/Source/Cake.SendGrid/**/*.AssemblyInfo.cs"
-                            },
-                            testCoverageFilter: "+[Cake.SendGrid]*",
-                            testCoverageExcludeByAttribute: "*.ExcludeFromCodeCoverage*",
-                            testCoverageExcludeByFile: "*/*Designer.cs;*/*.g.cs;*/*.g.i.cs");
+ToolSettings.SetToolSettings(context: Context);
 
 Build.RunDotNetCore();
