@@ -4,7 +4,7 @@
 	<id>http://cake-contrib.github.io/Cake.SendGrid</id>
 	<title>Cake.SendGrid</title>
 	<rights>2018</rights>
-	<updated>2018-03-13T20:44:18Z</updated>
+	<updated>2018-03-13T20:49:45Z</updated>
 	<entry>
 		<author>
 			<name>jericho</name>
@@ -19,13 +19,13 @@
 &lt;/ul&gt;
 &lt;h2 id="note"&gt;Note&lt;/h2&gt;
 &lt;p&gt;First, include a reference to this addin in your script like this:&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;#addin nuget:?package=Cake.SendGrid&amp;amp;version=0.6.0
+&lt;pre&gt;&lt;code class="language-csharp"&gt;#addin nuget:?package=Cake.SendGrid&amp;amp;version=0.6.0
 &lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;Second, we highly recommend that you add the following 'using' statement in your script. Technically, this is not necessary, but it simplifies dealing with attachements:&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;using Cake.Email.Common;
+&lt;pre&gt;&lt;code class="language-csharp"&gt;using Cake.Email.Common;
 &lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;Also, this addin is designed to take advantage of some of the new features released in CakeBuild version &lt;code&gt;0.26.0&lt;/code&gt; therefore your &lt;code&gt;tools\package.config&lt;/code&gt; should look like this:&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;&amp;lt;packages&amp;gt;
+&lt;pre&gt;&lt;code class="language-xml"&gt;&amp;lt;packages&amp;gt;
     &amp;lt;package id=&amp;quot;Cake&amp;quot; version=&amp;quot;0.26.0&amp;quot; /&amp;gt;
 &amp;lt;/packages&amp;gt;
 &lt;/code&gt;&lt;/pre&gt;

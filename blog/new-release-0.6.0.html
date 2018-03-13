@@ -132,13 +132,13 @@
 </ul>
 <h2 id="note">Note</h2>
 <p>First, include a reference to this addin in your script like this:</p>
-<pre><code>#addin nuget:?package=Cake.SendGrid&amp;version=0.6.0
+<pre><code class="language-csharp">#addin nuget:?package=Cake.SendGrid&amp;version=0.6.0
 </code></pre>
 <p>Second, we highly recommend that you add the following 'using' statement in your script. Technically, this is not necessary, but it simplifies dealing with attachements:</p>
-<pre><code>using Cake.Email.Common;
+<pre><code class="language-csharp">using Cake.Email.Common;
 </code></pre>
 <p>Also, this addin is designed to take advantage of some of the new features released in CakeBuild version <code>0.26.0</code> therefore your <code>tools\package.config</code> should look like this:</p>
-<pre><code>&lt;packages&gt;
+<pre><code class="language-xml">&lt;packages&gt;
     &lt;package id=&quot;Cake&quot; version=&quot;0.26.0&quot; /&gt;
 &lt;/packages&gt;
 </code></pre>
