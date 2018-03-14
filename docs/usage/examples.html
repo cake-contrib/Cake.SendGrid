@@ -109,7 +109,7 @@
 	</section>
 	<section class="content">
 		<p><strong>Sending an email to a single recipient:</strong></p>
-<pre><code class="language-csharp">#addin Cake.SendGrid&amp;version=0.6.0
+<pre><code class="language-csharp">#addin Cake.SendGrid&amp;version=0.6.0&amp;loaddependencies=true
 
 var sendGridApiKey = EnvironmentVariable(&quot;SENDGRID_API_KEY&quot;);
 
@@ -145,7 +145,7 @@ Task(&quot;SendEmail&quot;)
 });
 </code></pre>
 <p><strong>Sending an email to multiple recipients:</strong></p>
-<pre><code class="language-csharp">#addin Cake.SendGrid&amp;version=0.6.0
+<pre><code class="language-csharp">#addin Cake.SendGrid&amp;version=0.6.0&amp;loaddependencies=true
 
 var sendGridApiKey = EnvironmentVariable(&quot;SENDGRID_API_KEY&quot;);
 
