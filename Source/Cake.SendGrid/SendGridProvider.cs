@@ -1,6 +1,6 @@
-﻿using Cake.Common.Diagnostics;
-using Cake.Core;
+﻿using Cake.Core;
 using Cake.Core.Annotations;
+using Cake.Core.Diagnostics;
 using Cake.SendGrid.Email;
 using StrongGrid;
 using StrongGrid.Models;
@@ -240,7 +240,7 @@ namespace Cake.SendGrid
 
 				using (var client = new Client(settings.ApiKey))
 				{
-					_context.Verbose("Sending email to {0} via the SendGrid API...", string.Join(", ", safeRecipients.Select(r => r.Address).ToArray()));
+					_context.Log.Verbose("Sending email to {0} via the SendGrid API...", string.Join(", ", safeRecipients.Select(r => r.Address).ToArray()));
 
 					var from = new StrongGrid.Models.MailAddress(senderAddress, senderName);
 					var personalizations = safeRecipients.Select(r => new MailPersonalization { To = new[] { new StrongGrid.Models.MailAddress(r.Address, r.Name) } }).ToArray();
