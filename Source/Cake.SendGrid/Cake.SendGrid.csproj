@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
@@ -23,11 +23,10 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Cake.Core" Version="0.26.1" PrivateAssets="All" />
-    <PackageReference Include="Cake.Common" Version="0.26.1" PrivateAssets="All" />
+    <PackageReference Include="Cake.Core" Version="0.28.0" PrivateAssets="All" />
     <PackageReference Include="Cake.Email.Common" Version="0.2.0" />
-    <PackageReference Include="StrongGrid" Version="0.36.0" />
-    <PackageReference Include="StyleCop.Analyzers" Version="1.1.0-beta006" PrivateAssets="All" />
+    <PackageReference Include="StrongGrid" Version="0.45.0" />
+    <PackageReference Include="StyleCop.Analyzers" Version="1.1.0-beta008" PrivateAssets="All" />
   </ItemGroup>
 
   <ItemGroup>
@@ -35,7 +34,7 @@
   </ItemGroup>
 
   <PropertyGroup>
-    <CodeAnalysisRuleSet>$(SolutionDir)Cake.SendGrid.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSet>$(SolutionDir)StyleCopRules.ruleset</CodeAnalysisRuleSet>
   </PropertyGroup>
 
 </Project>

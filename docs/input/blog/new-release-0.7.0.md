@@ -1,20 +1,20 @@
 ---
-Title: New Release - 0.6.0
-Published: 13/03/2018
+Title: New Release - 0.7.0
+Published: 02/07/2018
 Category: Release
 Author: jericho
 ---
 
 ## Breaking Changes
 
-- [__#22__](https://github.com/cake-contrib/Cake.SendGrid/issues/22) Upgrade to Cake 0.26.0 and target netstandard2.0
+- [__#23__](https://github.com/cake-contrib/Cake.SendGrid/issues/23) Support Cake 0.28.0
 
 
 ## Note
 
 First, include a reference to this addin in your script like this:
 ```csharp
-#addin nuget:?package=Cake.SendGrid&version=0.6.0&loaddependencies=true
+#addin nuget:?package=Cake.SendGrid&version=0.7.0&loaddependencies=true
 ```
 
 Second, we highly recommend that you add the following 'using' statement in your script. Technically, this is not necessary, but it simplifies dealing with attachements: 
@@ -22,10 +22,10 @@ Second, we highly recommend that you add the following 'using' statement in your
 using Cake.Email.Common;
 ```
 
-Also, this addin is designed to take advantage of some of the new features released in CakeBuild version `0.26.0` therefore your `tools\package.config` should look like this:
+Also, this addin is designed to take advantage of some of the new features released in CakeBuild version `0.28.0` therefore your `tools\package.config` should look like this:
 ```xml
 <packages>
-    <package id="Cake" version="0.26.0" />
+    <package id="Cake" version="0.28.0" />
 </packages>
 ```
 

@@ -3,7 +3,7 @@
 namespace Cake.SendGrid.Email
 {
 	/// <summary>
-	/// Class that lets you override default API settings
+	/// Class that lets you override default API settings.
 	/// </summary>
 	[CakeAliasCategory("SendGrid")]
 	public sealed class SendGridSettings
@@ -14,7 +14,7 @@ namespace Cake.SendGrid.Email
 		public string ApiKey { get; set; }
 
 		/// <summary>
-		/// Gets or sets the Optional flag for if should throw exception on failure
+		/// Gets or sets the Optional flag for if should throw exception on failure.
 		/// </summary>
 		public bool? ThrowOnFail { get; set; }
 	}
