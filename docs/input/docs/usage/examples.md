@@ -1,7 +1,7 @@
 __Sending an email to a single recipient:__
 
 ```csharp
-#addin Cake.SendGrid&version=0.7.0&loaddependencies=true
+#addin Cake.SendGrid&version=0.8.0&loaddependencies=true
 
 var sendGridApiKey = EnvironmentVariable("SENDGRID_API_KEY");
 
@@ -40,7 +40,7 @@ Task("SendEmail")
 __Sending an email to multiple recipients:__
 
 ```csharp
-#addin Cake.SendGrid&version=0.7.0&loaddependencies=true
+#addin Cake.SendGrid&version=0.8.0&loaddependencies=true
 
 var sendGridApiKey = EnvironmentVariable("SENDGRID_API_KEY");
 
