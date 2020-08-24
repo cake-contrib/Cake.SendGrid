@@ -8,8 +8,9 @@ Cake.SendGrid is an Addin for [Cake](http://cakebuild.net/) which allows sending
 
 First, include a reference to this addin in your script like this:
 ```csharp
-#addin nuget:?package=Cake.SendGrid&version=0.8.0&loaddependencies=true
+#addin nuget:?package=Cake.SendGrid&version=0.8.2&loaddependencies=true
 ```
+Please note: `0.8.2` is the latest version of the Cake.SendGrid addin as of this writing but there may be a more recent version that was published since then. I encourage you to double check what is the latest available version on NuGet.
 
 Second, we highly recommend that you add the following 'using' statement in your script. Technically, this is not necesary, but it simplifies dealing with attachements: 
 ```csharp

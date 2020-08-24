@@ -63,11 +63,11 @@ namespace Cake.SendGrid
 		///         htmlContent: "<html><body>This is a test</body></html>",
 		///         textContent: "This is a test",
 		///         attachments: attachments,
-		///         settings: new SendGridEmailSettings { ApiKey = apiKey }
+		///         settings: new SendGridSettings { ApiKey = apiKey }
 		///     );
 		///     if (result.Ok)
 		///     {
-		///         Information("Email succcessfully sent");
+		///         Information("Email successfully sent");
 		///     }
 		///     else
 		///     {
@@ -120,11 +120,11 @@ namespace Cake.SendGrid
 		///         htmlContent: "<html><body>This is a test</body></html>",
 		///         textContent: "This is a test",
 		///         attachments: attachments,
-		///         settings: new SendGridEmailSettings { ApiKey = apiKey }
+		///         settings: new SendGridSettings { ApiKey = apiKey }
 		///     );
 		///     if (result.Ok)
 		///     {
-		///         Information("Email succcessfully sent");
+		///         Information("Email successfully sent");
 		///     }
 		///     else
 		///     {
@@ -180,11 +180,11 @@ namespace Cake.SendGrid
 		///         htmlContent: "<html><body>This is a test</body></html>",
 		///         textContent: "This is a test",
 		///         attachments: attachments,
-		///         settings: new SendGridEmailSettings { ApiKey = apiKey }
+		///         settings: new SendGridSettings { ApiKey = apiKey }
 		///     );
 		///     if (result.Ok)
 		///     {
-		///         Information("Email succcessfully sent");
+		///         Information("Email successfully sent");
 		///     }
 		///     else
 		///     {
