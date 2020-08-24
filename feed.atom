@@ -1,17 +1,17 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-	<link rel="self" href="http://cake-contrib.github.io/Cake.SendGrid" />
 	<id>http://cake-contrib.github.io/Cake.SendGrid</id>
 	<title>Cake.SendGrid</title>
-	<rights>2019</rights>
-	<updated>2019-04-17T20:33:06Z</updated>
+	<link rel="self" href="http://cake-contrib.github.io/Cake.SendGrid" />
+	<rights>2020</rights>
+	<updated>2020-08-24T15:30:18Z</updated>
 	<entry>
+		<id>http://cake-contrib.github.io/Cake.SendGrid/blog/new-release-0.8.0</id>
+		<title>New Release - 0.8.0</title>
 		<author>
 			<name>jericho</name>
 		</author>
 		<link href="http://cake-contrib.github.io/Cake.SendGrid/blog/new-release-0.8.0" />
-		<id>http://cake-contrib.github.io/Cake.SendGrid/blog/new-release-0.8.0</id>
-		<title>New Release - 0.8.0</title>
 		<updated>2019-04-17T00:00:00Z</updated>
 		<content>&lt;h2 id="improvement"&gt;Improvement&lt;/h2&gt;
 &lt;ul&gt;
@@ -34,12 +34,12 @@
 		<summary>&lt;p&gt;First, include a reference to this addin in your script like this:&lt;/p&gt;</summary>
 	</entry>
 	<entry>
+		<id>http://cake-contrib.github.io/Cake.SendGrid/blog/new-release-0.7.0</id>
+		<title>New Release - 0.7.0</title>
 		<author>
 			<name>jericho</name>
 		</author>
 		<link href="http://cake-contrib.github.io/Cake.SendGrid/blog/new-release-0.7.0" />
-		<id>http://cake-contrib.github.io/Cake.SendGrid/blog/new-release-0.7.0</id>
-		<title>New Release - 0.7.0</title>
 		<updated>2018-07-02T00:00:00Z</updated>
 		<content>&lt;h2 id="breaking-changes"&gt;Breaking Changes&lt;/h2&gt;
 &lt;ul&gt;
@@ -62,12 +62,12 @@
 		<summary>&lt;p&gt;First, include a reference to this addin in your script like this:&lt;/p&gt;</summary>
 	</entry>
 	<entry>
+		<id>http://cake-contrib.github.io/Cake.SendGrid/blog/new-release-0.6.0</id>
+		<title>New Release - 0.6.0</title>
 		<author>
 			<name>jericho</name>
 		</author>
 		<link href="http://cake-contrib.github.io/Cake.SendGrid/blog/new-release-0.6.0" />
-		<id>http://cake-contrib.github.io/Cake.SendGrid/blog/new-release-0.6.0</id>
-		<title>New Release - 0.6.0</title>
 		<updated>2018-03-13T00:00:00Z</updated>
 		<content>&lt;h2 id="breaking-changes"&gt;Breaking Changes&lt;/h2&gt;
 &lt;ul&gt;
@@ -90,12 +90,12 @@
 		<summary>&lt;p&gt;First, include a reference to this addin in your script like this:&lt;/p&gt;</summary>
 	</entry>
 	<entry>
+		<id>http://cake-contrib.github.io/Cake.SendGrid/blog/new-release-0.5.0</id>
+		<title>New Release - 0.5.0</title>
 		<author>
 			<name>jericho</name>
 		</author>
 		<link href="http://cake-contrib.github.io/Cake.SendGrid/blog/new-release-0.5.0" />
-		<id>http://cake-contrib.github.io/Cake.SendGrid/blog/new-release-0.5.0</id>
-		<title>New Release - 0.5.0</title>
 		<updated>2017-10-04T00:00:00Z</updated>
 		<content>&lt;h2 id="breaking-changes"&gt;Breaking Changes&lt;/h2&gt;
 &lt;ul&gt;
@@ -127,12 +127,12 @@ Your &lt;code&gt;tools\package.config&lt;/code&gt; should be:&lt;/p&gt;
 		<summary>&lt;p&gt;First, include a reference to this addin in your script like this:&lt;/p&gt;</summary>
 	</entry>
 	<entry>
+		<id>http://cake-contrib.github.io/Cake.SendGrid/blog/new-release-0.3.0</id>
+		<title>New Release - 0.3.0</title>
 		<author>
 			<name>jericho</name>
 		</author>
 		<link href="http://cake-contrib.github.io/Cake.SendGrid/blog/new-release-0.3.0" />
-		<id>http://cake-contrib.github.io/Cake.SendGrid/blog/new-release-0.3.0</id>
-		<title>New Release - 0.3.0</title>
 		<updated>2017-04-15T00:00:00Z</updated>
 		<content>&lt;h2 id="new-feature"&gt;New feature&lt;/h2&gt;
 &lt;ul&gt;
@@ -143,12 +143,12 @@ Your &lt;code&gt;tools\package.config&lt;/code&gt; should be:&lt;/p&gt;
 		<summary>&lt;p&gt;Please do not hesitate to reach out in the &lt;a href="https://gitter.im/cake-contrib/Lobby"&gt;Gitter Channel&lt;/a&gt; if you have any issues using this addin.&lt;/p&gt;</summary>
 	</entry>
 	<entry>
+		<id>http://cake-contrib.github.io/Cake.SendGrid/blog/new-release-0.2.0</id>
+		<title>New Release - 0.2.0</title>
 		<author>
 			<name>gep13</name>
 		</author>
 		<link href="http://cake-contrib.github.io/Cake.SendGrid/blog/new-release-0.2.0" />
-		<id>http://cake-contrib.github.io/Cake.SendGrid/blog/new-release-0.2.0</id>
-		<title>New Release - 0.2.0</title>
 		<updated>2017-02-01T00:00:00Z</updated>
 		<content>&lt;h1 id="long-time-no-release"&gt;Long time, no release&lt;/h1&gt;
 &lt;p&gt;Thanks to a contribution from &amp;#64;devlead, we are releasing 0.2.0 of Cake.SendGrid.  This includes the following:&lt;/p&gt;

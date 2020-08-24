@@ -39,20 +39,6 @@ var searchModule = function() {
     a(
         {
             id:0,
-            title:"SendGridResult",
-            content:"SendGridResult",
-            description:'',
-            tags:''
-        },
-        {
-            url:'/Cake.SendGrid/api/Cake.SendGrid/SendGridResult',
-            title:"SendGridResult",
-            description:""
-        }
-    );
-    a(
-        {
-            id:1,
             title:"SendGridProvider",
             content:"SendGridProvider",
             description:'',
@@ -61,6 +47,20 @@ var searchModule = function() {
         {
             url:'/Cake.SendGrid/api/Cake.SendGrid/SendGridProvider',
             title:"SendGridProvider",
+            description:""
+        }
+    );
+    a(
+        {
+            id:1,
+            title:"SendGridAliases",
+            content:"SendGridAliases",
+            description:'',
+            tags:''
+        },
+        {
+            url:'/Cake.SendGrid/api/Cake.SendGrid/SendGridAliases',
+            title:"SendGridAliases",
             description:""
         }
     );
@@ -81,14 +81,14 @@ var searchModule = function() {
     a(
         {
             id:3,
-            title:"SendGridAliases",
-            content:"SendGridAliases",
+            title:"SendGridResult",
+            content:"SendGridResult",
             description:'',
             tags:''
         },
         {
-            url:'/Cake.SendGrid/api/Cake.SendGrid/SendGridAliases',
-            title:"SendGridAliases",
+            url:'/Cake.SendGrid/api/Cake.SendGrid/SendGridResult',
+            title:"SendGridResult",
             description:""
         }
     );

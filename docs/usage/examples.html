@@ -1,22 +1,19 @@
-﻿<!DOCTYPE html>
-<html>
-    <head>
+﻿<!DOCTYPE html><html><head>
         <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
-        <meta name="description" />
-        <meta name="keywords" content="static content generator,static site generator,static site,HTML,web development,.NET,C#,Razor,Markdown,YAML" />
+        <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+        <meta name="description">
+        <meta name="keywords" content="static content generator,static site generator,static site,HTML,web development,.NET,C#,Razor,Markdown,YAML">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="shortcut icon" href="/Cake.SendGrid/assets/img/favicon.ico" type="image/x-icon">
         <link rel="icon" href="/Cake.SendGrid/assets/img/favicon.ico" type="image/x-icon">
         <title>Cake.SendGrid - Examples</title>
-        <link href="/Cake.SendGrid/assets/css/mermaid.css" rel="stylesheet">
         <link href="/Cake.SendGrid/assets/css/highlight.css" rel="stylesheet">
-        <link href="/Cake.SendGrid/assets/css/bootstrap/bootstrap.css" rel="stylesheet" />
-        <link href="/Cake.SendGrid/assets/css/adminlte/AdminLTE.css" rel="stylesheet" />
-        <link href="/Cake.SendGrid/assets/css/theme/theme.css" rel="stylesheet" />
+        <link href="/Cake.SendGrid/assets/css/bootstrap/bootstrap.css" rel="stylesheet">
+        <link href="/Cake.SendGrid/assets/css/adminlte/AdminLTE.css" rel="stylesheet">
+        <link href="/Cake.SendGrid/assets/css/theme/theme.css" rel="stylesheet">
         <link href="//fonts.googleapis.com/css?family=Roboto+Mono:400,700|Roboto:400,400i,700,700i" rel="stylesheet">
         <link href="/Cake.SendGrid/assets/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-        <link href="/Cake.SendGrid/assets/css/override.css" rel="stylesheet" />
+        <link href="/Cake.SendGrid/assets/css/override.css" rel="stylesheet">
         <script src="/Cake.SendGrid/assets/js/jquery-2.2.3.min.js"></script>
         <script src="/Cake.SendGrid/assets/js/bootstrap.min.js"></script>        
         <script src="/Cake.SendGrid/assets/js/app.min.js"></script>         
@@ -24,6 +21,7 @@
         <script src="/Cake.SendGrid/assets/js/jquery.slimscroll.min.js"></script>
         <script src="/Cake.SendGrid/assets/js/jquery.sticky-kit.min.js"></script>
         <script src="/Cake.SendGrid/assets/js/mermaid.min.js"></script>
+        <script src="/Cake.SendGrid/assets/js/svg-pan-zoom.min.js"></script>
         <!--[if lt IE 9]>
         <script src="/Cake.SendGrid/assets/js/html5shiv.min.js"></script>
         <script src="/Cake.SendGrid/assets/js/respond.min.js"></script>
@@ -111,77 +109,79 @@
 		</section>
 	<section class="content">
 		<p><strong>Sending an email to a single recipient:</strong></p>
-<pre><code class="language-csharp">#addin Cake.SendGrid&amp;version=0.8.0&amp;loaddependencies=true
+<pre><code class="language-csharp">#addin Cake.SendGrid&amp;version=0.8.2&amp;loaddependencies=true
 
-var sendGridApiKey = EnvironmentVariable(&quot;SENDGRID_API_KEY&quot;);
+var sendGridApiKey = EnvironmentVariable("SENDGRID_API_KEY");
 
-Task(&quot;SendEmail&quot;)
+Task("SendEmail")
     .Does(() =&gt;
 {
     try
     {
         var result = SendGrid.SendEmail(
-                senderName: &quot;Bob Smith&quot;, 
-                senderAddress: &quot;bob&#64;example.com&quot;,
-                recipientName: &quot;Jane Doe&quot;,
-                recipientAddress: &quot;jane&#64;example.com&quot;,
-                subject: &quot;This is a test&quot;,
-                htmlContent: &quot;&lt;html&gt;&lt;body&gt;This is a test&lt;/body&gt;&lt;/html&gt;&quot;,
-                textContent: &quot;This is a test&quot;,
-                settings: new SendGridEmailSettings { ApiKey = sendGridApiKey }
+                senderName: "Bob Smith", 
+                senderAddress: "bob@example.com",
+                recipientName: "Jane Doe",
+                recipientAddress: "jane@example.com",
+                subject: "This is a test",
+                htmlContent: "&lt;html&gt;&lt;body&gt;This is a test&lt;/body&gt;&lt;/html&gt;",
+                textContent: "This is a test",
+                attachments: null,
+                settings: new <a href="/Cake.SendGrid/api/Cake.SendGrid.Email/SendGridSettings">SendGridSettings</a> { ApiKey = sendGridApiKey }
         );
 
         if (result.Ok)
         {
-            Information(&quot;Email succcessfully sent&quot;);
+            Information("Email successfully sent");
         }
         else
         {
-            Error(&quot;Failed to send email: {0}&quot;, result.Error);
+            Error("Failed to send email: {0}", result.Error);
         }
     }
     catch(Exception ex)
     {
-        Error(&quot;{0}&quot;, ex);
+        Error("{0}", ex);
     }
 });
 </code></pre>
 <p><strong>Sending an email to multiple recipients:</strong></p>
-<pre><code class="language-csharp">#addin Cake.SendGrid&amp;version=0.8.0&amp;loaddependencies=true
+<pre><code class="language-csharp">#addin Cake.SendGrid&amp;version=0.8.1&amp;loaddependencies=true
 
-var sendGridApiKey = EnvironmentVariable(&quot;SENDGRID_API_KEY&quot;);
+var sendGridApiKey = EnvironmentVariable("SENDGRID_API_KEY");
 
-Task(&quot;SendEmail&quot;)
+Task("SendEmail")
     .Does(() =&gt;
 {
     try
     {
         var result = SendGrid.SendEmail(
-                senderName: &quot;Bob Smith&quot;, 
-                senderAddress: &quot;bob&#64;example.com&quot;,
+                senderName: "Bob Smith", 
+                senderAddress: "bob@example.com",
                 recipients: new[]
                 {
-                    new Cake.Email.Common.MailAddress(&quot;jane&#64;example.com&quot;, &quot;Jane Doe&quot;),
-                    new Cake.Email.Common.MailAddress(&quot;john&#64;example.com&quot;, &quot;John Smith&quot;)
+                    new Cake.Email.Common.MailAddress("jane@example.com", "Jane Doe"),
+                    new Cake.Email.Common.MailAddress("john@example.com", "John Smith")
                 },
-                subject: &quot;This is a test&quot;,
-                htmlContent: &quot;&lt;html&gt;&lt;body&gt;This is a test&lt;/body&gt;&lt;/html&gt;&quot;,
-                textContent: &quot;This is a test&quot;,
-                settings: new SendGridEmailSettings { ApiKey = sendGridApiKey }
+                subject: "This is a test",
+                htmlContent: "&lt;html&gt;&lt;body&gt;This is a test&lt;/body&gt;&lt;/html&gt;",
+                textContent: "This is a test",
+                attachments: null,
+                settings: new <a href="/Cake.SendGrid/api/Cake.SendGrid.Email/SendGridSettings">SendGridSettings</a> { ApiKey = sendGridApiKey }
         );
 
         if (result.Ok)
         {
-            Information(&quot;Email succcessfully sent&quot;);
+            Information("Email successfully sent");
         }
         else
         {
-            Error(&quot;Failed to send email: {0}&quot;, result.Error);
+            Error("Failed to send email: {0}", result.Error);
         }
     }
     catch(Exception ex)
     {
-        Error(&quot;{0}&quot;, ex);
+        Error("{0}", ex);
     }
 });
 </code></pre>
@@ -208,22 +208,53 @@ Task(&quot;SendEmail&quot;)
                 $(document.body).removeClass('sidebar-open');
             });
             
-            $(document).load(function() {
+            $(document).ready(function() {
                 mermaid.initialize(
                 {
                     flowchart:
                     {
-                        htmlLabels: false,
-                        useMaxWidth:false
-                    }
-                });  
-                mermaid.init(undefined, ".mermaid")
-                $('svg').addClass('img-responsive');
+                        useMaxWidth: false
+                    },
+					startOnLoad: false,
+					cloneCssStyles: false
+                });     
+                mermaid.init(undefined, ".mermaid");
+
+                // Remove the max-width setting that Mermaid sets
+                var mermaidSvg = $('.mermaid svg');
+                mermaidSvg.addClass('img-responsive');
+                mermaidSvg.css('max-width', '');
+
+                // Make it scrollable
+				var target = document.querySelector(".mermaid svg");
+				if(target !== null)
+				{
+					var panZoom = window.panZoom = svgPanZoom(target, {
+						zoomEnabled: true,
+						controlIconsEnabled: true,
+						fit: true,
+						center: true,
+                        maxZoom: 20,
+                        zoomScaleSensitivity: 0.6
+					});			                          
+
+                    // Do the reset once right away to fit the diagram
+                    panZoom.resize();
+                    panZoom.fit();
+                    panZoom.center();
+                    
+                    $(window).resize(function(){
+                        panZoom.resize();
+                        panZoom.fit();
+                        panZoom.center();
+                    });
+				}
                 
                 $('pre code').each(function(i, block) {
                     hljs.highlightBlock(block);
                 });  
             });
+
             hljs.initHighlightingOnLoad();
 
             // Back to top
@@ -240,5 +271,5 @@ Task(&quot;SendEmail&quot;)
                 }, 500);
             });
         </script>
-    </body>
-</html>
+    
+</body></html>
