@@ -1,7 +1,7 @@
 __Sending an email to a single recipient:__
 
 ```csharp
-#addin Cake.SendGrid&version=0.8.0&loaddependencies=true
+#addin Cake.SendGrid&version=0.8.2&loaddependencies=true
 
 var sendGridApiKey = EnvironmentVariable("SENDGRID_API_KEY");
 
@@ -18,12 +18,13 @@ Task("SendEmail")
                 subject: "This is a test",
                 htmlContent: "<html><body>This is a test</body></html>",
                 textContent: "This is a test",
-                settings: new SendGridEmailSettings { ApiKey = sendGridApiKey }
+                attachments: null,
+                settings: new SendGridSettings { ApiKey = sendGridApiKey }
         );
 
         if (result.Ok)
         {
-            Information("Email succcessfully sent");
+            Information("Email successfully sent");
         }
         else
         {
@@ -40,7 +41,7 @@ Task("SendEmail")
 __Sending an email to multiple recipients:__
 
 ```csharp
-#addin Cake.SendGrid&version=0.8.0&loaddependencies=true
+#addin Cake.SendGrid&version=0.8.1&loaddependencies=true
 
 var sendGridApiKey = EnvironmentVariable("SENDGRID_API_KEY");
 
@@ -60,12 +61,13 @@ Task("SendEmail")
                 subject: "This is a test",
                 htmlContent: "<html><body>This is a test</body></html>",
                 textContent: "This is a test",
-                settings: new SendGridEmailSettings { ApiKey = sendGridApiKey }
+                attachments: null,
+                settings: new SendGridSettings { ApiKey = sendGridApiKey }
         );
 
         if (result.Ok)
         {
-            Information("Email succcessfully sent");
+            Information("Email successfully sent");
         }
         else
         {
