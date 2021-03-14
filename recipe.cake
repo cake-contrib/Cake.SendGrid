@@ -1,4 +1,4 @@
-#load nuget:?package=Cake.Recipe&version=1.1.2
+#load nuget:?package=Cake.Recipe&version=2.2.0
 
 Environment.SetVariableNames();
 
@@ -6,15 +6,15 @@ BuildParameters.SetParameters(context: Context,
                             buildSystem: BuildSystem,
                             sourceDirectoryPath: "./Source",
                             title: "Cake.SendGrid",
+                            masterBranchName: "main",
                             repositoryOwner: "cake-contrib",
                             repositoryName: "Cake.SendGrid",
                             shouldRunDotNetCorePack: true,
                             shouldRunDupFinder: false,
                             shouldRunInspectCode: false,
                             shouldRunCodecov: false,
-                            shouldPublishMyGet: false,
                             appVeyorAccountName: "cakecontrib",
-                            shouldRunGitVersion: true);
+                            shouldCalculateVersion: true);
 
 BuildParameters.PrintParameters(Context);
 
