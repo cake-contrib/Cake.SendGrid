@@ -6,25 +6,16 @@ Cake.SendGrid is an Addin for [Cake](http://cakebuild.net/) which allows sending
 
 ## Usage
 
-First, include a reference to this addin in your script like this:
+First, include a reference to this addin in your script like this (of course, replace `x.y.z` with the latest version available on [NuGet](https://www.nuget.org/packages/Cake.SendGrid)):
 
 ```csharp
-#addin nuget:?package=Cake.SendGrid&version=0.8.2&loaddependencies=true
+#addin nuget:?package=Cake.SendGrid&version=x.y.z&loaddependencies=true
 ```
-Please note: `0.8.2` is the latest version of the Cake.SendGrid addin as of this writing but there may be a more recent version that was published since then. I encourage you to double check what is the latest available version on NuGet.
 
 Second, we highly recommend that you add the following 'using' statement in your script. Technically, this is not necesary, but it simplifies dealing with attachements:
 
 ```csharp
 using Cake.Email.Common;
-```
-
-Also, this addin is designed to take advantage of some of the new features released in CakeBuild version `0.33.0` therefore your `tools\package.config` should look like this:
-
-```xml
-<packages>
-    <package id="Cake" version="0.33.0" />
-</packages>
 ```
 
 ## Information
