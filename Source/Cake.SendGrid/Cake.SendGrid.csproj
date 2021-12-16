@@ -1,4 +1,4 @@
-﻿<Project Sdk="Microsoft.NET.Sdk">
+<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFrameworks>netstandard2.0;net461;net5.0</TargetFrameworks>
@@ -27,7 +27,7 @@
   <ItemGroup>
     <PackageReference Include="Cake.Core" Version="1.0.0" PrivateAssets="All" />
     <PackageReference Include="Cake.Email.Common" Version="1.0.0" />
-    <PackageReference Include="StrongGrid" Version="0.76.0" />
+    <PackageReference Include="StrongGrid" Version="0.84.0" />
     <PackageReference Include="StyleCop.Analyzers" Version="1.1.118" PrivateAssets="All" />
   </ItemGroup>
 
