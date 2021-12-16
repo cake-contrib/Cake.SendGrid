@@ -1,4 +1,4 @@
-﻿using Cake.Core;
+using Cake.Core;
 using Cake.Core.Annotations;
 using Cake.Core.Diagnostics;
 using Cake.SendGrid.Email;
@@ -281,7 +281,13 @@ namespace Cake.SendGrid
 							};
 						}).ToArray();
 
-					var messageId = client.Mail.SendAsync(personalizations, subject, contents, from, null, sendGridAttachments, null, null, null, null, null, null, null, null, null, null, trackingSettings).Result;
+					var messageId = client.Mail.SendAsync(
+						personalizations: personalizations,
+						subject: subject,
+						contents: contents,
+						from: from,
+						attachments: sendGridAttachments,
+						trackingSettings: trackingSettings).GetAwaiter().GetResult();
 					return new SendGridResult(true, messageId, DateTime.UtcNow.ToString("u"), string.Empty);
 				}
 			}
