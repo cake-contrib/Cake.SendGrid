@@ -1,7 +1,7 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFrameworks>net8.0;net9.0</TargetFrameworks>
+    <TargetFrameworks>net8.0;net9.0;net10.0</TargetFrameworks>
     <PlatformTarget>anycpu</PlatformTarget>
     <GenerateDocumentationFile>true</GenerateDocumentationFile>
     <OutputType>Library</OutputType>
@@ -18,18 +18,18 @@
     <Authors>Jericho</Authors>
     <Owners>Jericho</Owners>
     <PackageProjectUrl>https://github.com/cake-contrib/Cake.SendGrid/</PackageProjectUrl>
-	<PackageIcon>PackageIcon.png</PackageIcon>
+    <PackageIcon>PackageIcon.png</PackageIcon>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
-	<RepositoryType>git</RepositoryType>
-	<RepositoryUrl>https://github.com/cake-contrib/Cake.SendGrid.git</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <RepositoryUrl>https://github.com/cake-contrib/Cake.SendGrid.git</RepositoryUrl>
     <Copyright>Copyright (c) Cake Contributions 2016 - Present</Copyright>
     <Company>Cake Contributions</Company>
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Cake.Core" Version="5.0.0" PrivateAssets="All" />
-    <PackageReference Include="Cake.Email.Common" Version="4.0.1" />
-    <PackageReference Include="StrongGrid" Version="0.110.0" />
+    <PackageReference Include="Cake.Core" Version="6.0.0" PrivateAssets="All" />
+    <PackageReference Include="Cake.Email.Common" Version="5.0.0" />
+    <PackageReference Include="StrongGrid" Version="0.114.0" />
     <PackageReference Include="StyleCop.Analyzers" Version="1.1.118" PrivateAssets="All" />
   </ItemGroup>
 
