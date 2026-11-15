@@ -67,20 +67,6 @@ var searchModule = function() {
     a(
         {
             id:2,
-            title:"SendGridAliases",
-            content:"SendGridAliases",
-            description:'',
-            tags:''
-        },
-        {
-            url:'/Cake.SendGrid/api/Cake.SendGrid/SendGridAliases',
-            title:"SendGridAliases",
-            description:""
-        }
-    );
-    a(
-        {
-            id:3,
             title:"SendGridResult",
             content:"SendGridResult",
             description:'',
@@ -89,6 +75,20 @@ var searchModule = function() {
         {
             url:'/Cake.SendGrid/api/Cake.SendGrid/SendGridResult',
             title:"SendGridResult",
+            description:""
+        }
+    );
+    a(
+        {
+            id:3,
+            title:"SendGridAliases",
+            content:"SendGridAliases",
+            description:'',
+            tags:''
+        },
+        {
+            url:'/Cake.SendGrid/api/Cake.SendGrid/SendGridAliases',
+            title:"SendGridAliases",
             description:""
         }
     );
